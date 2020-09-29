@@ -2271,7 +2271,9 @@ take precedence the ones in this file. */
 		.image img {
 			display: block;
 		}
-
+.idk{max-width:600px;
+max-height:1200px;
+}
 		.image.left, .image.right {
 			max-width: 40%;
 		}
