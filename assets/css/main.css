@@ -5,7 +5,7 @@
 Then, you have to go through the css file to rename the fonts. The easist way is to find the rules in here
 or by using the web inspector in the browser. Then, rewrite the css rules in the "custom.css" file. They will
 take precedence the ones in this file. */
-@import url("https://fonts.googleapis.com/css?family=Lato:300,700,300italic,700italic");
+@import url("https://use.typekit.net/ztz4szw.css");
 
 /* Reset */
 
@@ -1589,9 +1589,11 @@ take precedence the ones in this file. */
 	}
 
 	body, input, select, textarea {
-		font-family: "Lato", Arial, Helvetica, sans-serif;
+		font-family: "Franklin Gothic", Arial, Helvetica, sans-serif;
+		font-weight: 100;
+		font-style: normal;
+		/*font-family: "Lato", Arial, Helvetica, sans-serif;*/
 		font-size: 16pt;
-		font-weight: 300;
 		line-height: 1.75;
 	}
 
@@ -1628,7 +1630,12 @@ take precedence the ones in this file. */
 	}
 
 	p {
-		margin: 0 0 2em 0;
+		font-family: "franklin-gothic-condensed";
+		font-weight: 200;
+		font-size: 18px;
+
+		margin: 0 0 1.5em 0;
+
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -1642,23 +1649,27 @@ take precedence the ones in this file. */
 		}
 
 	h1 {
-		font-size: 2.35em;
+		font-size: 2.55em;
 	}
 
 	h2 {
 		font-size: 1.75em;
+		font-weight:600;
 	}
 
 	h3 {
 		font-size: 1.35em;
+		font-weight: 400;
 	}
 
 	h4 {
-		font-size: 1.1em;
+		font-size: 1.10em;
+			font-weight: 400;
 	}
 
 	h5 {
 		font-size: 0.9em;
+
 	}
 
 	h6 {
@@ -2334,6 +2345,7 @@ max-height:1200px;
 
 		ul li {
 			padding-left: 0.5em;
+			font-weight: lighter;
 		}
 
 		ul.alt {
@@ -3085,11 +3097,15 @@ max-height:1200px;
 			color: #fff;
 			font-size: 1.25em;
 			text-decoration: none;
+			font-weight: 100;
+			font-family: "franklin-gothic-condensed";
 		}
 
 			#header .logo strong {
 				color: inherit;
-				font-weight: 700;
+				font-weight: 400;
+				font-family: "Franklin Gothic";
+
 			}
 
 		#header nav a {
@@ -3305,13 +3321,15 @@ max-height:1200px;
 
 /* Banner */
 
-	#banner {
-		background-color: #3498db;
-		color: rgba(255, 255, 255, 0.75);
-		text-align: center;
-		cursor: default;
-		padding: 10em 4em 9em 4em;
-	}
+#banner {
+	background-image: url(../../images/lily-header.jpg);
+	background-size: cover;
+	color: rgba(255, 255, 255, 0.75);
+	text-shadow: 1px 1px 15px #333;
+	text-align: center;
+	cursor: default;
+	padding: 10em 4em 9em 4em;
+}
 
 		#banner input, #banner select, #banner textarea {
 			color: #fff;
@@ -3324,7 +3342,9 @@ max-height:1200px;
 		#banner strong, #banner b {
 			color: #fff;
 		}
-
+	  #banner h1 {
+			font-family: "Book Antiqua", Arial, Helvetica, sans-serif;
+		}
 		#banner h1, #banner h2, #banner h3, #banner h4, #banner h5, #banner h6 {
 			color: #fff;
 		}
@@ -3360,7 +3380,7 @@ max-height:1200px;
 			#banner input[type="button"]:hover,
 			#banner button:hover,
 			#banner .button:hover {
-				background-color: #1dd2af;
+				background-color: rgba(119, 164, 180, .25);
 			}
 
 			#banner input[type="submit"]:active,
@@ -3368,7 +3388,8 @@ max-height:1200px;
 			#banner input[type="button"]:active,
 			#banner button:active,
 			#banner .button:active {
-				background-color: #17a689;
+				background-color: rgba(119, 164, 180, 1);
+
 			}
 
 			#banner input[type="submit"].alt,
@@ -3376,9 +3397,11 @@ max-height:1200px;
 			#banner input[type="button"].alt,
 			#banner button.alt,
 			#banner .button.alt {
-				background-color: transparent;
-				box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.25);
+				background-color: rgba(255, 255, 255, 0.075);
+				box-shadow: inset 0 0 0 2px rgba(119, 164, 180, 0.25);
 				color: #fff !important;
+				border-color: rgba(119, 164, 180,.80);
+				border-radius: 6px;
 			}
 
 				#banner input[type="submit"].alt:hover,
@@ -3386,7 +3409,7 @@ max-height:1200px;
 				#banner input[type="button"].alt:hover,
 				#banner button.alt:hover,
 				#banner .button.alt:hover {
-					background-color: rgba(255, 255, 255, 0.075);
+					background-color: rgba(119, 164, 180, .5);
 				}
 
 				#banner input[type="submit"].alt:active,
@@ -3394,7 +3417,7 @@ max-height:1200px;
 				#banner input[type="button"].alt:active,
 				#banner button.alt:active,
 				#banner .button.alt:active {
-					background-color: rgba(255, 255, 255, 0.2);
+					background-color: rgba(119, 164, 180, 1);
 				}
 
 				#banner input[type="submit"].alt.icon:before,
@@ -3571,7 +3594,9 @@ max-height:1200px;
 		}
 
 /* Main */
-
+	#main h1 {
+		font-family: "Book Antiqua", Arial, Helvetica, sans-serif;
+	}
 	#main {
 		padding: 4em 0 2em 0;
 	}
@@ -3584,11 +3609,20 @@ max-height:1200px;
 			#main .inner header p {
 				font-size: 1em;
 				font-style: italic;
+				color: rgba(120, 85, 67, .5);
 				border-top: 1px solid rgba(144, 144, 144, 0.25);
 				border-bottom: 1px solid rgba(144, 144, 144, 0.25);
 				padding: .5em 0;
 			}
-
+			#main p {
+				color:#785543;
+			}
+			#main h1 h2 h3 h4 h5 h6{
+				color: #785543;
+			}
+			#main h1{
+				color: rgba(120, 85, 67, .65);
+			}
 		@media screen and (max-width: 980px) {
 
 			#main {
@@ -3634,7 +3668,7 @@ max-height:1200px;
 			order: 1;
 			width: 50%;
 			display: block;
-			background: #FFF;
+			background: white;
 			padding: 8em;
 			text-align: right;
 			position: relative;
@@ -3767,10 +3801,13 @@ max-height:1200px;
 
 			.post.style1 input, .post.style1 select, .post.style1 textarea {
 				color: #1abc9c;
+
 			}
 
 			.post.style1 a {
-				color: #1abc9c;
+				color: #785543;
+				font-family: "franklin-gothic-condensed";
+				font-weight: normal;
 			}
 
 			.post.style1 strong, .post.style1 b {
@@ -3801,6 +3838,9 @@ max-height:1200px;
 			.post.style1 .button {
 				background-color: #1abc9c;
 				color: #fff !important;
+				font-family: "franklin-gothic-condensed", Arial, Helvetica, sans-serif;
+				font-weight: 600;
+
 			}
 
 				.post.style1 input[type="submit"]:hover,
@@ -3826,7 +3866,7 @@ max-height:1200px;
 				.post.style1 .button.alt {
 					background-color: transparent;
 					box-shadow: inset 0 0 0 2px rgba(144, 144, 144, 0.25);
-					color: #1abc9c !important;
+					color: #785543 !important;
 				}
 
 					.post.style1 input[type="submit"].alt:hover,
@@ -3872,6 +3912,8 @@ max-height:1200px;
 				}
 
 				.post.style1.invert a {
+					font-family: "franklin-gothic-condensed";
+					font-weight: normal;
 					color: #fff;
 				}
 
@@ -3903,6 +3945,8 @@ max-height:1200px;
 				.post.style1.invert .button {
 					background-color: #fff;
 					color: #1abc9c !important;
+					font-family: "franklin-gothic-condensed";
+					font-weight: 600;
 				}
 
 					.post.style1.invert input[type="submit"].alt,
@@ -3949,7 +3993,7 @@ max-height:1200px;
 					}
 
 				.post.style1.invert .content {
-					background: #1abc9c;
+					background: #B3592A;
 				}
 
 					.post.style1.invert .content header p {
@@ -3970,13 +4014,14 @@ max-height:1200px;
 							color: rgba(255, 255, 255, 0.5);
 						}
 
+
 				.post.style1.invert .image {
 					background-color: #1abc9c;
 				}
 
 		.post.style2 {
 			background-color: #fff;
-			color: #444;
+			color: #785543;
 		}
 
 			.post.style2 input, .post.style2 select, .post.style2 textarea {
@@ -3984,7 +4029,9 @@ max-height:1200px;
 			}
 
 			.post.style2 a {
-				color: #3498db;
+				font-family: "franklin-gothic-condensed";
+				font-weight: normal;
+				color: #785543;
 			}
 
 			.post.style2 strong, .post.style2 b {
@@ -4015,6 +4062,8 @@ max-height:1200px;
 			.post.style2 .button {
 				background-color: #1abc9c;
 				color: #fff !important;
+				font-family: "franklin-gothic-condensed";
+				font-weight: 600;
 			}
 
 				.post.style2 input[type="submit"]:hover,
@@ -4040,7 +4089,7 @@ max-height:1200px;
 				.post.style2 .button.alt {
 					background-color: transparent;
 					box-shadow: inset 0 0 0 2px rgba(144, 144, 144, 0.25);
-					color: #3498db !important;
+					color: #785543 !important;
 				}
 
 					.post.style2 input[type="submit"].alt:hover,
@@ -4179,7 +4228,7 @@ max-height:1200px;
 					}
 
 				.post.style2.invert .content {
-					background: #3498db;
+					background: #B3592A;
 				}
 
 					.post.style2.invert .content header p {
