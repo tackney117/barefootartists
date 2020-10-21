@@ -1646,6 +1646,7 @@ take precedence the ones in this file. */
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 			color: inherit;
+
 		}
 
 	h1 {
@@ -1694,6 +1695,7 @@ take precedence the ones in this file. */
 		margin: 0 0 2em 0;
 		padding: 0.5em 0 0.5em 2em;
 	}
+
 
 	code {
 		border-radius: 0;
